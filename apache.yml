@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+          - name: "Install apache"
+            apt:
+                    name: apache2
+                    state: present
+          - include_tasks: php.yml
